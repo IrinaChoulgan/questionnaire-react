@@ -9,7 +9,9 @@ export default function JSPage() {
   };
   return (
     <>
-      <button onClick={onClick}>Home</button>
+      <button onClick={onClick} className="btn">
+        Home
+      </button>
       <div className="App">
         <GameJS></GameJS>
       </div>

@@ -9,7 +9,9 @@ export default function HtmlPage() {
   };
   return (
     <>
-      <button onClick={onClick}>Home</button>
+      <button onClick={onClick} className="btn">
+        Home
+      </button>
       <div className="App">
         <GameHtml />
       </div>

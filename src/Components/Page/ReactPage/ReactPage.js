@@ -9,9 +9,11 @@ export default function ReactPage() {
   };
   return (
     <>
-      <button onClick={onClick}>Home</button>
+      <button onClick={onClick} className="btn">
+        Home
+      </button>
       <div className="App">
-        <GameReact></GameReact>
+        <GameReact />
       </div>
     </>
   );
