@@ -5,6 +5,8 @@ import './index.scss';
 import ReactPage from './Components/Page/ReactPage/ReactPage';
 import JSPage from './Components/Page/JSPage/JSPage';
 import HtmlPage from './Components/Page/HtmlPage/HtmlPage';
+import Card from './Components/Card/Card';
+import Header from './Components/Header/Header';
 
 function App() {
   const navigate = useNavigate();
@@ -23,10 +25,7 @@ function App() {
 
   return (
     <>
-      <header className="header">
-        <h1 className="header_title">Tests to check your knowledge of React, JavaScript</h1>
-      </header>
-      <hr></hr>
+      <Header />
       <Routes>
         <Route path="/react" element={<ReactPage />}></Route>
         <Route path="/js" element={<JSPage />}></Route>
@@ -34,19 +33,23 @@ function App() {
         <Route
           path="/"
           element={
-            <>
-              <div class="blog-card spring-fever">
-                <div class="title-content">
-                  <h3>SPRING FEVER</h3>
-                  <hr />
-                  <div class="intro">Yllamco laboris nisi ut aliquip ex ea commodo.</div>
-                  <button onClick={onClick}>React</button>
-                </div>
-                <div class="utility-info"></div>
-              </div>
-              <button onClick={onClickJS}>JS</button>
-              <button onClick={onClickHtml}>Html/Css</button>
-            </>
+            <div className="container">
+              <Card
+                onClick={onClick}
+                title={'React'}
+                text={'In this block, 13 theoretical questions from React await you'}
+              />
+              <Card
+                onClick={onClickJS}
+                title={'JS'}
+                text={'In this block, 32 theoretical questions from JavaScript await you'}
+              />
+              <Card
+                onClick={onClickHtml}
+                title={'HTML/CSS'}
+                text={'In this block, 16 theoretical questions from HTML and CSS await you'}
+              />
+            </div>
           }
         ></Route>
       </Routes>
