@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/questionnaire-react/static/css/main.ecae0a4a.css",
+    "main.js": "/questionnaire-react/static/js/main.12ccddc9.js",
+    "index.html": "/questionnaire-react/index.html",
+    "main.ecae0a4a.css.map": "/questionnaire-react/static/css/main.ecae0a4a.css.map",
+    "main.12ccddc9.js.map": "/questionnaire-react/static/js/main.12ccddc9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecae0a4a.css",
+    "static/js/main.12ccddc9.js"
+  ]
+}
