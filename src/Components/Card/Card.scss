@@ -62,10 +62,14 @@ h3 {
   padding: 10px 30px;
   position: relative;
   border: 2px solid #f1c40f;
+  border-radius: 10px;
   color: #000;
   font-family: 'Montserrat', sans-serif;
   transition: 0.4s;
   margin-top: 60px;
+  &:hover {
+    background: #fff3c4;
+  }
 }
 .card_btn:after {
   content: '';

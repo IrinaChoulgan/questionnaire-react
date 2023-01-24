@@ -8,13 +8,13 @@ export default function ReactPage() {
     navigate('/');
   };
   return (
-    <>
+    <div className="wrapper">
       <button onClick={onClick} className="btn">
         Home
       </button>
       <div className="App">
         <GameReact />
       </div>
-    </>
+    </div>
   );
 }
