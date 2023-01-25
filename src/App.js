@@ -7,12 +7,13 @@ import JSPage from './Components/Page/JSPage/JSPage';
 import HtmlPage from './Components/Page/HtmlPage/HtmlPage';
 import Card from './Components/Card/Card';
 import Header from './Components/Header/Header';
+import { useLS } from './hooks/useLS';
 
 export const ThemeContext = createContext(null);
 
 function App() {
   const navigate = useNavigate();
-  const [theme, setTheme] = useState(localStorage.getItem('theme'));
+  const [theme, setTheme] = useLS('light');
 
   useEffect(() => {
     localStorage.setItem('theme', theme);
