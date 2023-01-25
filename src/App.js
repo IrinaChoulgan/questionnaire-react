@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import './index.scss';
 
@@ -12,7 +12,11 @@ export const ThemeContext = createContext(null);
 
 function App() {
   const navigate = useNavigate();
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(localStorage.getItem('theme'));
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+  }, [theme]);
 
   const onClick = () => {
     navigate('/react');
