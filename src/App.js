@@ -1,16 +1,12 @@
 import React, { createContext, useState } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import './index.scss';
-import ReactSwitch from 'react-switch';
 
 import ReactPage from './Components/Page/ReactPage/ReactPage';
 import JSPage from './Components/Page/JSPage/JSPage';
 import HtmlPage from './Components/Page/HtmlPage/HtmlPage';
 import Card from './Components/Card/Card';
 import Header from './Components/Header/Header';
-
-import { ReactComponent as Sun } from '../src/static/images/sun.svg';
-import { ReactComponent as Moon } from '../src/static/images/moon.svg';
 
 export const ThemeContext = createContext(null);
 
@@ -37,20 +33,7 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div id={theme}>
-        <div className="header_container">
-          <Header />
-          <div className="switch">
-            <ReactSwitch
-              onChange={toggleTheme}
-              checked={theme === 'light'}
-              uncheckedIcon={<Sun className="soon_svg" />}
-              checkedIcon={<Moon className="moon_svg" />}
-              onColor={'#183934'}
-              offColor={'#008080'}
-            />
-          </div>
-        </div>
-        <hr />
+        <Header toggleTheme={toggleTheme} theme={theme} />
         <Routes>
           <Route path="/react" element={<ReactPage />}></Route>
           <Route path="/js" element={<JSPage />}></Route>

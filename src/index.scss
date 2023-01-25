@@ -7,15 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
 }
-.switch {
-  display: flex;
-  justify-content: flex-end;
-}
-.header_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .footer {
   position: sticky;
   height: 200px;
@@ -42,25 +33,44 @@ body {
 #dark {
   background-color: #183934;
 }
+
+@media screen and (max-width: 767px) {
+  .App {
+    width: 190px;
+  }
+  .wrapper {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .result_btn {
+    font-size: 20px;
+  }
+}
 .App {
-  width: 500px;
+  //width: 500px;
   border-radius: 30px;
   padding: 40px;
   background-color: #fff;
   position: relative;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 20px;
 
   .result {
     text-align: center;
 
-    button {
+    .result_btn {
       font-weight: bold;
       font-family: 'Nunito', sans-serif;
       border-radius: 30px;
       border: 0;
       padding: 15px 30px;
-      font-size: 20px;
       background-color: darken(#66cdaa, 3%);
       color: #fff;
       margin-top: 20px;
@@ -69,10 +79,6 @@ body {
 
     h2 {
       margin-bottom: 0;
-    }
-
-    img {
-      width: 500px;
     }
   }
 
@@ -135,7 +141,7 @@ body {
       transition: all 0.1s ease-in-out;
 
       &:hover {
-        border: 2px solid rgba(0, 0, 0, 0.3);
+        border: 2px solid rgba(167, 125, 125, 0.3);
       }
     }
   }
@@ -146,6 +152,12 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 .btn {

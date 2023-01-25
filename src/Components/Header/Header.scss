@@ -1,7 +1,28 @@
 .header {
   padding: 30px;
+
+  &_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 #dark .header_title {
   color: #fff;
+}
+
+.switch {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .header_title {
+    font-size: 25px;
+  }
+  .header_container {
+    flex-direction: column;
+  }
 }

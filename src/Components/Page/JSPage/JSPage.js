@@ -8,13 +8,13 @@ export default function JSPage() {
     navigate('/');
   };
   return (
-    <>
+    <div className="wrapper">
       <button onClick={onClick} className="btn">
         Home
       </button>
       <div className="App">
         <GameJS></GameJS>
       </div>
-    </>
+    </div>
   );
 }

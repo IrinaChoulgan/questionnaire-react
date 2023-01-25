@@ -8,13 +8,13 @@ export default function HtmlPage() {
     navigate('/');
   };
   return (
-    <>
+    <div className="wrapper">
       <button onClick={onClick} className="btn">
         Home
       </button>
       <div className="App">
         <GameHtml />
       </div>
-    </>
+    </div>
   );
 }
