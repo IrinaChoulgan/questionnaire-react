@@ -26,3 +26,18 @@
     flex-direction: column;
   }
 }
+.btn-container {
+  position: absolute;
+  right: 10px;
+}
+.btn_translation-en,
+.btn_translation-uk {
+  padding: 2px;
+  border: none;
+  background-color: transparent;
+}
+.img_translation-en,
+.img_translation-uk {
+  width: 20px;
+  height: 20px;
+}

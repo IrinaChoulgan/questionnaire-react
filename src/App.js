@@ -16,7 +16,7 @@ function App() {
   const navigate = useNavigate();
   const [theme, setTheme] = useLS('light');
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     localStorage.setItem('theme', theme);
@@ -38,15 +38,9 @@ function App() {
     setTheme((curr) => (curr === 'light' ? 'dark' : 'light'));
   };
 
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
-
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div id={theme}>
-        <button onClick={() => changeLanguage('en')}>EN</button>
-        <button onClick={() => changeLanguage('ua')}>UA</button>
         <Header toggleTheme={toggleTheme} theme={theme} />
         <Routes>
           <Route path="/react" element={<ReactPage />}></Route>
