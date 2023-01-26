@@ -1,6 +1,9 @@
 import './Card.scss';
+import { useTranslation } from 'react-i18next';
 
 export default function Card({ onClick, title, text }) {
+  const { t } = useTranslation();
+
   return (
     <div className="blog-card spring-fever">
       <div className="title-content">
@@ -8,7 +11,7 @@ export default function Card({ onClick, title, text }) {
         <hr className="card_hr" />
         <div className="intro">{text}</div>
         <button className="card_btn" onClick={onClick}>
-          Start
+          {t('cardButton')}
         </button>
       </div>
       <div className="utility-info"></div>
