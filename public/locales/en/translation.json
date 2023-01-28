@@ -3,5 +3,352 @@
   "titleJs": "In this block, 32 theoretical questions from JavaScript await you",
   "titleHtml": "In this block, 16 theoretical questions from HTML and CSS await you",
   "title": "Tests to check your knowledge of React, JavaScript and HTML/CSS",
-  "cardButton": "Start"
+  "cardButton": "Start",
+  "question_html": [
+    {
+      "title": "Responsible for filling the web page with content, structure and content:",
+      "variants": ["HTML", "CSS", "JavaScript"],
+      "correct": 0
+    },
+    {
+      "title": "What are the smallest building blocks that make up any web page?",
+      "variants": ["attributes", "tags"],
+      "correct": 1
+    },
+    {
+      "title": "Is the img tag even?",
+      "variants": ["Yes", "No"],
+      "correct": 1
+    },
+    {
+      "title": "Which tag is intended to store service information about the page: title, description, coding, etc.?",
+      "variants": ["html", "body", "head"],
+      "correct": 2
+    },
+    {
+      "title": "Occupies the entire line, regardless of the size of its content:",
+      "variants": ["inline element", "block-level element"],
+      "correct": 1
+    },
+    {
+      "title": "Large files that do not require a transparent background or animation",
+      "variants": ["JPEG", "PNG", "webP"],
+      "correct": 0
+    },
+    {
+      "title": "What tag is used for the final part of the entire page, its section or article. Often includes copyright, a list of links to social networks, contact information, and so on. There may be several per page?",
+      "variants": ["main", "header", "footer"],
+      "correct": 2
+    },
+    {
+      "title": "For which pseudo-class is the correct description: activated when an interactive element (link, button, form field) receives focus during page navigation with the keyboard (Tab key)?",
+      "variants": [":focus", ":hover", ":active"],
+      "correct": 0
+    },
+    {
+      "title": "What property sets various decorative underlines and other text effects?",
+      "variants": ["text-decoration", "text-transform", "text-align"],
+      "correct": 0
+    },
+    {
+      "title": "What type of block model is used in browsers by default?",
+      "variants": ["border-box", "content-box"],
+      "correct": 1
+    },
+    {
+      "title": "The collapsible property controls the outer margin from the frame for all sides of the element:",
+      "variants": ["margin", "border", "padding"],
+      "correct": 0
+    },
+    {
+      "title": "Which flexbox property sets the direction of the main axis, determining the direction of the elements in the container:",
+      "variants": ["align-items", "flex-wrap", "flex-direction"],
+      "correct": 2
+    },
+    {
+      "title": "What will happen to elements with justify-content: space-between",
+      "variants": [
+        "elements will be evenly distributed on the main axis",
+        "the elements will be pressed to the end of the axis",
+        "elements are distributed evenly, but the left and right elements lag behind the borders of the container by half the space between the other elements"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "What are the images that carry a meaningful load, belong to the content of the page and help convey useful information to the user?",
+      "variants": ["Decorative images", "Content images", "Raster images"],
+      "correct": 1
+    },
+    {
+      "title": "What type of positioning is used for anchored headers with navigation, pop-ups, manager chats on online store pages, etc.?",
+      "variants": ["sticky position", "absolute position", "fixed position"],
+      "correct": 2
+    },
+    {
+      "title": "What type of verst corresponds to the description: It has several display options, the transitions between them are smooth, the elements and the container stretch like rubber:",
+      "variants": ["responsive", "adaptive"],
+      "correct": 0
+    }
+  ],
+  "question_react": [
+    {
+      "title": "React - this is ... ?",
+      "variants": ["Library", "Framework", "Addition"],
+      "correct": 0
+    },
+    {
+      "title": "A component is a ...",
+      "variants": [
+        "The application itself",
+        "An abstraction, a lightweight copy of a real DOM tree in the form of a JSON document",
+        "The main building blocks of React applications, with the help of which the interface is divided into independent parts."
+      ],
+      "correct": 2
+    },
+    {
+      "title": "What is JSX?",
+      "variants": [
+        "This is plain HTML",
+        "This is a function",
+        "It's the same HTML, but with the ability to execute JS code"
+      ],
+      "correct": 2
+    },
+    {
+      "title": "What command must be written in the terminal to create an application in the current folder?",
+      "variants": ["npx create-react-app .", "npx create-react-app my-app", "npx create-react-app"],
+      "correct": 0
+    },
+    {
+      "title": "How are props transmitted?",
+      "variants": [
+        "up the tree from the parent component",
+        "down the tree from the parent component",
+        "As you like"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "In order to render a collection of elements of the same type, the method is used...",
+      "variants": ["Array.prototype.map()", "Array.length", "Both options are correct"],
+      "correct": 0
+    },
+    {
+      "title": "Is it possible to use element index for key when creating collection elements",
+      "variants": ["Yes", "No"],
+      "correct": 0
+    },
+    {
+      "title": "Arrange the life cycles in a logical order:",
+      "variants": [
+        "componentDidUpdate, componentWillUnmount, componentDidMount",
+        "componentDidMount, componentWillUnmount, componentDidUpdate",
+        "componentDidMount, componentDidUpdate, componentWillUnmount"
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Which lifecycle is good for cleaning up after itself: listeners, timers, HTTP requests?",
+      "variants": ["componentWillUnmount", "componentDidMount", "componentDidUpdate"],
+      "correct": 0
+    },
+    {
+      "title": "With the help of which hook in the function components, all these effects can be performed by simulating the operation of three life cycle methods - componentDidMount, componentDidUpdate, componentWillUnmount, combining them into one API?",
+      "variants": ["useState", "useEffect", "useContaxt"],
+      "correct": 1
+    },
+    {
+      "title": "What is the difference between <Link> and <NavLink>?",
+      "variants": [
+        "The <NavLink> component differs only in that it can have additional styles if the current URL matches the value of the to property.",
+        "It differs in that <NavLink> redirects the user to the navigation bar when clicked",
+        "No different"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "Objects that pass data from components to pages, thereby signaling what event has occurred in the interface, are...",
+      "variants": ["Props", "Reducers", "Actions"],
+      "correct": 2
+    },
+    {
+      "title": "A unique encrypted string that contains three blocks: a header, a set of fields (payload) and a signature is...",
+      "variants": ["JSON Web Token", "HTTP-request", "URL"],
+      "correct": 0
+    }
+  ],
+  "qustion_js": [
+    {
+      "title": "When connecting multiple JavaScript files to a page, the interpreter processes them in which order?",
+      "variants": [
+        "In random order",
+        "as they are specified in the HTML file",
+        "Depending on the functions in the script"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "The string method that will make all letters uppercase is:",
+      "variants": ["toUpperCase()", "toLowerCase()"],
+      "correct": 0
+    },
+    {
+      "title": "Which variable cannot be overridden after it is declared?",
+      "variants": ["var", "let", "const"],
+      "correct": 2
+    },
+    {
+      "title": "What is the default value assigned to let",
+      "variants": ["underfined", "null", "0"],
+      "correct": 0
+    },
+    {
+      "title": "What is + - * / % called in mathematical operators?",
+      "variants": ["actions", "operators", "operands"],
+      "correct": 1
+    },
+    {
+      "title": "What the Number.parseInt() method does?",
+      "variants": [
+        "parses an integer from a string",
+        "parses a fractional number from a string",
+        "rounds to the second decimal place"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "What does the indexOf() method return if the element is not found?",
+      "variants": ["null", "underfined", "-1"],
+      "correct": 2
+    },
+    {
+      "title": "Which syntax will be correct when writing the ternary operator?",
+      "variants": [
+        "<condition> ? <expression_if_condition_true> : <expression_if_condition_false>",
+        "<condition> ? <expression_if_condition_false> : <expression_if_condition_true>",
+        "<condition> : <expression_if_condition_true> ? <expression_if_condition_is_false>"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "A loop that executes as long as some condition specified before it starts is true. This condition is checked before the loop body executes, so the body may never execute if the condition is false from the start. It:",
+      "variants": ["Цикл while", "do...while", "for"],
+      "correct": 0
+    },
+    {
+      "title": "Which statement interrupts not the entire cycle, but only the execution of the current iteration?",
+      "variants": ["breake", "continue", "both options are correct"],
+      "correct": 1
+    },
+    {
+      "title": "A data structure for storing and manipulating a collection of indexed values ​​is:",
+      "variants": ["arrays", "Objects", "Function"],
+      "correct": 0
+    },
+    {
+      "title": "Which of the array methods combines array elements into a string?",
+      "variants": ["split(delimiter)", "join(delimiter)", "includes(value)"],
+      "correct": 1
+    },
+    {
+      "title": "Which method adds one or more elements to the end of an array without having to specify the indices of the elements being added?",
+      "variants": ["push()", "pop()", "concat()"],
+      "correct": 0
+    },
+    {
+      "title": "In parentheses after the function name are indicated ... - a list of data that the function expects at the time of the call.",
+      "variants": ["arguments", "parameters"],
+      "correct": 1
+    },
+    {
+      "title": "What will the function return if there is no return in the body of the function?",
+      "variants": ["null", "there will be an error", "underfined"],
+      "correct": 2
+    },
+    {
+      "title": "A normal declaration of a variable whose value will be a function is this?",
+      "variants": ["function expression", "function declaration"],
+      "correct": 0
+    },
+    {
+      "title": "Which of the object methods takes an object and returns an array of its own property keys?",
+      "variants": ["Object.keys(obj)", "Object.keys(obj)", "Object.entries(obj)"],
+      "correct": 1
+    },
+    {
+      "title": "What is the name of a function that is passed to another function as an argument, which, in turn, calls the passed function?",
+      "variants": ["higher order function", "callback"],
+      "correct": 1
+    },
+    {
+      "title": "Which of the array iterative methods allows you to find and return the first matching element, after which the array iteration stops?",
+      "variants": ["map()", "filter()", "find()"],
+      "correct": 2
+    },
+    {
+      "title": "Which of the array iterative methods checks whether at least one element of the array passes the callback function's test? Returns true or false.",
+      "variants": ["some()", "every()", "flatMap()"],
+      "correct": 0
+    },
+    {
+      "title": "Do arrow functions have their this",
+      "variants": ["Yes", "No"],
+      "correct": 1
+    },
+    {
+      "title": "A way of describing an entity that defines a state and behavior that depends on that state, as well as rules for interacting with that entity (a contract), is...",
+      "variants": ["Copy", "Interface", "Class"],
+      "correct": 2
+    },
+    {
+      "title": "What is the name of the highest element in the DOM?",
+      "variants": ["root node", "parent node", "child node"],
+      "correct": 0
+    },
+    {
+      "title": "What is the name of the technique that controls the number of times a function can be called during a certain time interval?",
+      "variants": ["debounce", "throttle"],
+      "correct": 1
+    },
+    {
+      "title": "... is a JS module assembler, a module dependency manager that parses the dependency tree and creates one or more resulting files containing the entire project codebase.",
+      "variants": ["Webpack", "package", "node.js"],
+      "correct": 0
+    },
+    {
+      "title": "Which method allows you to schedule a function to run after a certain time?",
+      "variants": ["throttle", "setTimeout()", "setInterval()"],
+      "correct": 1
+    },
+    {
+      "title": "Which of the three states of promises can be described as follows: the operation was successfully completed with any result?",
+      "variants": ["fulfilled", "pending", "rejected"],
+      "correct": 0
+    },
+    {
+      "title": "Which of the promise methods catch errors?",
+      "variants": ["then()", "finally()", "catch()"],
+      "correct": 2
+    },
+    {
+      "title": "Which method returns a fulfilled or rejected promise, depending on the outcome of the fastest of the passed promises, with the value or reason for its failure?",
+      "variants": ["Promise.race()", "Promise.all()", "Promise.resolve()"],
+      "correct": 0
+    },
+    {
+      "title": "What is a set of well-defined communication rules between different software components?",
+      "variants": ["API", "REST", "REST API"],
+      "correct": 0
+    },
+    {
+      "title": "Which HTTP method allows you to retrieve a set of resources or a single resource?",
+      "variants": ["POST", "PATCH", "GET"],
+      "correct": 2
+    },
+    {
+      "title": "Which HTTP method allows you to retrieve a set of resources or a single resource?",
+      "variants": ["POST", "PATCH", "GET"],
+      "correct": 2
+    }
+  ]
 }
