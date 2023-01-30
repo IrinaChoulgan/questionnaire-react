@@ -2,6 +2,7 @@ import './Game.scss';
 
 export default function Game({ question, onClickVariant, step, questions }) {
   const persentage = Math.round((step / questions?.length) * 100);
+
   return (
     <>
       <div className="progress">

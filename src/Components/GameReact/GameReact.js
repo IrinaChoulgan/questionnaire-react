@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import '../../index.scss';
 import questions from '../Games/AllQuestions/questionsReact.json';
 import Result from '../Result/Result';
@@ -7,8 +8,10 @@ import Game from '../Games/Game';
 export default function GameReact() {
   const [step, setStep] = useState(0);
   const [correctAnswer, setCorrectAnswer] = useState(0);
+  const { t } = useTranslation();
+  const questionReactObj = t('question_html', { returnObjects: true });
 
-  const question = questions[step];
+  const question = questionReactObj[step];
 
   const onClickVariant = (index) => {
     setStep(step + 1);

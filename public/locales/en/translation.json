@@ -4,6 +4,9 @@
   "titleHtml": "In this block, 16 theoretical questions from HTML and CSS await you",
   "title": "Tests to check your knowledge of React, JavaScript and HTML/CSS",
   "cardButton": "Start",
+  "textResult": "Congratulations! Survey result:",
+  "btnResult": "Try again",
+  "btnOnPageTest": "Home",
   "question_html": [
     {
       "title": "Responsible for filling the web page with content, structure and content:",

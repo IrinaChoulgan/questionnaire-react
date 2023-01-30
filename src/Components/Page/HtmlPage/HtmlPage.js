@@ -1,8 +1,10 @@
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import GameHtml from '../../GameHtml/GameHtml';
 
 export default function HtmlPage() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const onClick = () => {
     navigate('/');
@@ -10,7 +12,7 @@ export default function HtmlPage() {
   return (
     <div className="wrapper">
       <button onClick={onClick} className="btn">
-        Home
+        {t('btnOnPageTest')}
       </button>
       <div className="App">
         <GameHtml />

@@ -3,12 +3,15 @@ import '../../index.scss';
 import questionsHtml from '../Games/AllQuestions/questionsHtml.json';
 import Result from '../Result/Result';
 import Game from '../Games/Game';
+import { useTranslation } from 'react-i18next';
 
 export default function GameHtml() {
   const [stepHtml, setStepHtml] = useState(0);
   const [correctAnswerHtml, setCorrectAnswerHtml] = useState(0);
+  const { t } = useTranslation();
+  const questionHtmlObj = t('question_html', { returnObjects: true });
 
-  const questionHtml = questionsHtml[stepHtml];
+  const questionHtml = questionHtmlObj[stepHtml];
 
   const onClickVariantHtml = (index) => {
     setStepHtml(stepHtml + 1);
