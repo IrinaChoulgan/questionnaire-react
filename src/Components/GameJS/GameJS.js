@@ -9,9 +9,10 @@ export default function GameJS() {
   const [stepJS, setStepJS] = useState(0);
   const [correctAnswerJS, setCorrectAnswerJS] = useState(0);
   const { t } = useTranslation();
-  const questionJsObj = t('question_html', { returnObjects: true });
+  const questionJsObj = t('qustion_js', { returnObjects: true });
 
   const questionJS = questionJsObj[stepJS];
+  console.log(questionJS);
 
   const onClickVariantJS = (index) => {
     setStepJS(stepJS + 1);

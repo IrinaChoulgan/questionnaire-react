@@ -9,7 +9,7 @@ export default function GameReact() {
   const [step, setStep] = useState(0);
   const [correctAnswer, setCorrectAnswer] = useState(0);
   const { t } = useTranslation();
-  const questionReactObj = t('question_html', { returnObjects: true });
+  const questionReactObj = t('question_react', { returnObjects: true });
 
   const question = questionReactObj[step];
 
